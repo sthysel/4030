@@ -1,0 +1,377 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:4030-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "4030 Reciever"
+Date "2017-08-12"
+Rev ""
+Comp "sthysel"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BC548 Q?
+U 1 1 59905858
+P 2300 4550
+F 0 "Q?" H 2500 4625 50  0000 L CNN
+F 1 "BC548" H 2500 4550 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 2500 4475 50  0001 L CIN
+F 3 "" H 2300 4550 50  0001 L CNN
+	1    2300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC548 Q?
+U 1 1 59905859
+P 4800 3550
+F 0 "Q?" H 5000 3625 50  0000 L CNN
+F 1 "BC548" H 5000 3550 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 5000 3475 50  0001 L CIN
+F 3 "" H 4800 3550 50  0001 L CNN
+	1    4800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5990585D
+P 2900 3550
+F 0 "C?" H 2925 3650 50  0000 L CNN
+F 1 "4.7p" H 2925 3450 50  0000 L CNN
+F 2 "" H 2938 3400 50  0001 C CNN
+F 3 "" H 2900 3550 50  0001 C CNN
+	1    2900 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5990585E
+P 2400 5550
+F 0 "#PWR?" H 2400 5300 50  0001 C CNN
+F 1 "Earth" H 2400 5400 50  0001 C CNN
+F 2 "" H 2400 5550 50  0001 C CNN
+F 3 "" H 2400 5550 50  0001 C CNN
+	1    2400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal_GND2 Y?
+U 1 1 5990585F
+P 3900 3550
+F 0 "Y?" H 3900 3775 50  0000 C CNN
+F 1 "7.16 MHz" H 3900 3700 50  0000 C CNN
+F 2 "" H 3900 3550 50  0001 C CNN
+F 3 "" H 3900 3550 50  0001 C CNN
+	1    3900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59905860
+P 3350 4500
+F 0 "C?" H 3375 4600 50  0000 L CNN
+F 1 "33p" H 3375 4400 50  0000 L CNN
+F 2 "" H 3388 4350 50  0001 C CNN
+F 3 "" H 3350 4500 50  0001 C CNN
+	1    3350 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Variable C?
+U 1 1 59905861
+P 3650 4500
+F 0 "C?" H 3675 4425 50  0000 L CNN
+F 1 "RX Tuning 10-100p" H 3675 4350 50  0000 L CNN
+F 2 "" H 3650 4500 50  0001 C CNN
+F 3 "" H 3650 4500 50  0001 C CNN
+	1    3650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59905862
+P 4550 3900
+F 0 "C?" H 4575 4000 50  0000 L CNN
+F 1 "100p" H 4575 3800 50  0000 L CNN
+F 2 "" H 4588 3750 50  0001 C CNN
+F 3 "" H 4550 3900 50  0001 C CNN
+	1    4550 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 59905863
+P 4550 4450
+F 0 "C?" H 4575 4550 50  0000 L CNN
+F 1 "47p" H 4575 4350 50  0000 L CNN
+F 2 "" H 4588 4300 50  0001 C CNN
+F 3 "" H 4550 4450 50  0001 C CNN
+	1    4550 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59905864
+P 4900 4500
+F 0 "R?" V 4980 4500 50  0000 C CNN
+F 1 "10k" V 4900 4500 50  0000 C CNN
+F 2 "" V 4830 4500 50  0001 C CNN
+F 3 "" H 4900 4500 50  0001 C CNN
+	1    4900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59905865
+P 2400 2850
+F 0 "R?" V 2480 2850 50  0000 C CNN
+F 1 "4.7k" V 2400 2850 50  0000 C CNN
+F 2 "" V 2330 2850 50  0001 C CNN
+F 3 "" H 2400 2850 50  0001 C CNN
+	1    2400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59905866
+P 1950 4050
+F 0 "R?" V 2030 4050 50  0000 C CNN
+F 1 "R" V 1950 4050 50  0000 C CNN
+F 2 "" V 1880 4050 50  0001 C CNN
+F 3 "" H 1950 4050 50  0001 C CNN
+	1    1950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59905867
+P 1650 4550
+F 0 "C?" H 1675 4650 50  0000 L CNN
+F 1 "4.7p" H 1675 4450 50  0000 L CNN
+F 2 "" H 1688 4400 50  0001 C CNN
+F 3 "" H 1650 4550 50  0001 C CNN
+	1    1650 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Antenna Antenna?
+U 1 1 59905868
+P 1250 4100
+F 0 "Antenna?" H 1175 4175 50  0000 R CNN
+F 1 "To antenna relay" H 1175 4100 50  0000 R CNN
+F 2 "" H 1250 4100 50  0001 C CNN
+F 3 "" H 1250 4100 50  0001 C CNN
+	1    1250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59905869
+P 5350 4500
+F 0 "C?" H 5375 4600 50  0000 L CNN
+F 1 "100n" H 5375 4400 50  0000 L CNN
+F 2 "" H 5388 4350 50  0001 C CNN
+F 3 "" H 5350 4500 50  0001 C CNN
+	1    5350 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5990586A
+P 4900 2850
+F 0 "R?" V 4980 2850 50  0000 C CNN
+F 1 "4.7k" V 4900 2850 50  0000 C CNN
+F 2 "" V 4830 2850 50  0001 C CNN
+F 3 "" H 4900 2850 50  0001 C CNN
+	1    4900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 5990586B
+P 4300 2850
+F 0 "RV?" V 4125 2850 50  0000 C CNN
+F 1 "50k" V 4200 2850 50  0000 C CNN
+F 2 "" H 4300 2850 50  0001 C CNN
+F 3 "" H 4300 2850 50  0001 C CNN
+	1    4300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5990586C
+P 4550 3100
+F 0 "R?" V 4630 3100 50  0000 C CNN
+F 1 "4.7M" V 4550 3100 50  0000 C CNN
+F 2 "" V 4480 3100 50  0001 C CNN
+F 3 "" H 4550 3100 50  0001 C CNN
+	1    4550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5990586D
+P 4300 2300
+F 0 "R?" V 4380 2300 50  0000 C CNN
+F 1 "220k" V 4300 2300 50  0000 C CNN
+F 2 "" V 4230 2300 50  0001 C CNN
+F 3 "" H 4300 2300 50  0001 C CNN
+	1    4300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5990586E
+P 4300 3250
+F 0 "#PWR?" H 4300 3000 50  0001 C CNN
+F 1 "Earth" H 4300 3100 50  0001 C CNN
+F 2 "" H 4300 3250 50  0001 C CNN
+F 3 "" H 4300 3250 50  0001 C CNN
+	1    4300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5990586F
+P 3350 2050
+F 0 "C?" H 3375 2150 50  0000 L CNN
+F 1 "100n" H 3375 1950 50  0000 L CNN
+F 2 "" H 3388 1900 50  0001 C CNN
+F 3 "" H 3350 2050 50  0001 C CNN
+	1    3350 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 59905870
+P 3350 2450
+F 0 "#PWR?" H 3350 2200 50  0001 C CNN
+F 1 "Earth" H 3350 2300 50  0001 C CNN
+F 2 "" H 3350 2450 50  0001 C CNN
+F 3 "" H 3350 2450 50  0001 C CNN
+	1    3350 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2450 3350 2200
+Connection ~ 3350 1700
+Wire Wire Line
+	3350 1900 3350 1700
+Wire Wire Line
+	4300 3000 4300 3250
+Connection ~ 4300 1700
+Wire Wire Line
+	4300 1700 4300 2150
+Wire Wire Line
+	4300 2700 4300 2450
+Wire Wire Line
+	4550 2850 4450 2850
+Wire Wire Line
+	4550 2950 4550 2850
+Connection ~ 4900 1700
+Wire Wire Line
+	4900 1700 4900 2700
+Wire Wire Line
+	4900 3350 4900 3000
+Connection ~ 5350 5300
+Wire Wire Line
+	5350 5300 5350 4650
+Wire Wire Line
+	5350 3350 5350 4350
+Wire Wire Line
+	4900 3350 5350 3350
+Wire Wire Line
+	2400 1700 4900 1700
+Wire Wire Line
+	2400 2700 2400 1700
+Wire Wire Line
+	1250 4550 1500 4550
+Wire Wire Line
+	1250 4300 1250 4550
+Connection ~ 1950 4550
+Wire Wire Line
+	1950 3900 1950 3550
+Wire Wire Line
+	1800 4550 2100 4550
+Wire Wire Line
+	1950 4200 1950 4550
+Connection ~ 2400 3550
+Connection ~ 4900 5300
+Wire Wire Line
+	4900 5300 4900 4650
+Connection ~ 4900 4200
+Wire Wire Line
+	4550 4200 4900 4200
+Wire Wire Line
+	4900 3750 4900 4350
+Connection ~ 4550 4200
+Wire Wire Line
+	4550 4050 4550 4300
+Connection ~ 4550 5300
+Wire Wire Line
+	4550 5300 4550 4600
+Connection ~ 4550 3550
+Wire Wire Line
+	4550 3250 4550 3750
+Connection ~ 3650 5300
+Wire Wire Line
+	3650 5300 3650 4650
+Connection ~ 3650 3550
+Wire Wire Line
+	3650 3550 3650 4350
+Connection ~ 3350 5300
+Wire Wire Line
+	3350 4650 3350 5300
+Connection ~ 3350 3550
+Wire Wire Line
+	3350 4350 3350 3550
+Wire Wire Line
+	1950 3550 2750 3550
+Wire Wire Line
+	2400 3000 2400 4350
+Wire Wire Line
+	4050 3550 4600 3550
+Wire Wire Line
+	3050 3550 3750 3550
+Connection ~ 3900 5300
+Wire Wire Line
+	3900 5300 3900 3750
+Connection ~ 2400 5300
+Wire Wire Line
+	2400 4750 2400 5550
+Wire Wire Line
+	2400 5300 5350 5300
+$EndSCHEMATC

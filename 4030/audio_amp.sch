@@ -1,0 +1,272 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:4030-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM386 U?
+U 1 1 5990293F
+P 5400 3800
+F 0 "U?" H 5450 4100 50  0000 L CNN
+F 1 "LM386" H 5450 4000 50  0000 L CNN
+F 2 "" H 5500 3900 50  0001 C CNN
+F 3 "" H 5600 4000 50  0001 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5990296A
+P 4550 3700
+F 0 "C?" H 4575 3800 50  0000 L CNN
+F 1 "C" H 4575 3600 50  0000 L CNN
+F 2 "" H 4588 3550 50  0001 C CNN
+F 3 "" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3700 5100 3700
+Text HLabel 4150 3700 0    60   Input ~ 0
+AudioIn
+Wire Wire Line
+	4150 3700 4400 3700
+Wire Wire Line
+	4900 4550 4900 3900
+Wire Wire Line
+	4900 3900 5100 3900
+$Comp
+L +12V #PWR?
+U 1 1 599029D6
+P 5700 2050
+F 0 "#PWR?" H 5700 1900 50  0001 C CNN
+F 1 "+12V" H 5700 2190 50  0000 C CNN
+F 2 "" H 5700 2050 50  0001 C CNN
+F 3 "" H 5700 2050 50  0001 C CNN
+	1    5700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 599029FE
+P 5300 2550
+F 0 "R?" V 5380 2550 50  0000 C CNN
+F 1 "R" V 5300 2550 50  0000 C CNN
+F 2 "" V 5230 2550 50  0001 C CNN
+F 3 "" H 5300 2550 50  0001 C CNN
+	1    5300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59902A6A
+P 5300 3050
+F 0 "R?" V 5380 3050 50  0000 C CNN
+F 1 "R" V 5300 3050 50  0000 C CNN
+F 2 "" V 5230 3050 50  0001 C CNN
+F 3 "" H 5300 3050 50  0001 C CNN
+	1    5300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2700 5300 2900
+Wire Wire Line
+	5300 3200 5300 3500
+Wire Wire Line
+	5300 2400 5300 2050
+Wire Wire Line
+	5300 2050 5700 2050
+$Comp
+L C C?
+U 1 1 59902B27
+P 5850 2800
+F 0 "C?" H 5875 2900 50  0000 L CNN
+F 1 "100u" H 5875 2700 50  0000 L CNN
+F 2 "" H 5888 2650 50  0001 C CNN
+F 3 "" H 5850 2800 50  0001 C CNN
+	1    5850 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 2800 5300 2800
+Connection ~ 5300 2800
+$Comp
+L Earth #PWR?
+U 1 1 59902BF9
+P 6050 3000
+F 0 "#PWR?" H 6050 2750 50  0001 C CNN
+F 1 "Earth" H 6050 2850 50  0001 C CNN
+F 2 "" H 6050 3000 50  0001 C CNN
+F 3 "" H 6050 3000 50  0001 C CNN
+	1    6050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3000 6050 2800
+Wire Wire Line
+	6050 2800 6000 2800
+$Comp
+L Earth #PWR?
+U 1 1 59902C31
+P 5600 4650
+F 0 "#PWR?" H 5600 4400 50  0001 C CNN
+F 1 "Earth" H 5600 4500 50  0001 C CNN
+F 2 "" H 5600 4650 50  0001 C CNN
+F 3 "" H 5600 4650 50  0001 C CNN
+	1    5600 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 4550
+$Comp
+L C C?
+U 1 1 59902C5F
+P 5950 4300
+F 0 "C?" H 5975 4400 50  0000 L CNN
+F 1 "100u" H 5975 4200 50  0000 L CNN
+F 2 "" H 5988 4150 50  0001 C CNN
+F 3 "" H 5950 4300 50  0001 C CNN
+	1    5950 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 4150 5950 3350
+Wire Wire Line
+	5950 3350 5300 3350
+Connection ~ 5300 3350
+Wire Wire Line
+	5950 4550 5950 4450
+Wire Wire Line
+	4900 4550 7250 4550
+$Comp
+L C C?
+U 1 1 59902D03
+P 6350 4300
+F 0 "C?" H 6375 4400 50  0000 L CNN
+F 1 "100n" H 6375 4200 50  0000 L CNN
+F 2 "" H 6388 4150 50  0001 C CNN
+F 3 "" H 6350 4300 50  0001 C CNN
+	1    6350 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 3500 6350 3500
+Wire Wire Line
+	6350 3500 6350 4150
+Wire Wire Line
+	6350 4550 6350 4450
+Connection ~ 5950 4550
+Wire Wire Line
+	5300 4100 5300 4550
+Connection ~ 5300 4550
+$Comp
+L C C?
+U 1 1 59902FDD
+P 5550 4300
+F 0 "C?" H 5575 4400 50  0000 L CNN
+F 1 "10u" H 5575 4200 50  0000 L CNN
+F 2 "" H 5588 4150 50  0001 C CNN
+F 3 "" H 5550 4300 50  0001 C CNN
+	1    5550 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 4100 5400 4300
+Wire Wire Line
+	5500 4100 5700 4100
+Wire Wire Line
+	5700 4100 5700 4300
+$Comp
+L C C?
+U 1 1 599032D9
+P 6650 3800
+F 0 "C?" H 6675 3900 50  0000 L CNN
+F 1 "220u" H 6675 3700 50  0000 L CNN
+F 2 "" H 6688 3650 50  0001 C CNN
+F 3 "" H 6650 3800 50  0001 C CNN
+	1    6650 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3800 6500 3800
+Text HLabel 7650 3800 2    60   Output ~ 0
+AmplifiedAudio
+Wire Wire Line
+	6800 3800 7650 3800
+Wire Wire Line
+	5600 4650 5600 4550
+Connection ~ 5600 4550
+$Comp
+L D D?
+U 1 1 599034A2
+P 6850 4200
+F 0 "D?" H 6850 4300 50  0000 C CNN
+F 1 "IN4148" H 6850 4100 50  0000 C CNN
+F 2 "" H 6850 4200 50  0001 C CNN
+F 3 "" H 6850 4200 50  0001 C CNN
+	1    6850 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 4050 6850 3800
+Connection ~ 6850 3800
+Wire Wire Line
+	6850 4550 6850 4350
+Connection ~ 6350 4550
+$Comp
+L D D?
+U 1 1 5990358F
+P 7250 4200
+F 0 "D?" H 7250 4300 50  0000 C CNN
+F 1 "IN4148" H 7250 4100 50  0000 C CNN
+F 2 "" H 7250 4200 50  0001 C CNN
+F 3 "" H 7250 4200 50  0001 C CNN
+	1    7250 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 4050 7250 3800
+Connection ~ 7250 3800
+Connection ~ 6850 4550
+Wire Wire Line
+	7250 4550 7250 4350
+$EndSCHEMATC

@@ -1,0 +1,64 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:4030-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "4030 Reciever"
+Date "2017-08-12"
+Rev ""
+Comp "sthysel"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2700 3150 1150 900 
+U 59903926
+F0 "RF Pre Amp" 60
+F1 "file59903926.sch" 60
+$EndSheet
+$Sheet
+S 4200 3150 1200 900 
+U 59903927
+F0 "Audio Pre Amp" 60
+F1 "file59903927.sch" 60
+$EndSheet
+$Sheet
+S 5800 3150 1300 900 
+U 59906766
+F0 "Audio Low Pass Filter" 60
+F1 "audio_low_pass_filter.sch" 60
+$EndSheet
+$EndSCHEMATC
