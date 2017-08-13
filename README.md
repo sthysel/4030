@@ -2,9 +2,9 @@
 
 4030 a simple 40m 30W CW TX/RX
 
-Find kicad schematic in 4040 directory. It is a hierarchical set of sheets
+Find kicad schematic in 4030 directory. It is a hierarchical set of sheets
 corresponding to each system component. Below is the first RF receive and
-detect stage in the receiver.
+detect stage in the receiver. Only the RX is currently available.
 
 ![](pics/rfpreamp_detector.png)
 
