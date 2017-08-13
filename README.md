@@ -1,20 +1,11 @@
 # 4030
 
-4030 a simple 40m 30W CW TX
+4030 a simple 40m 30W CW TX/RX
 
-## BOM
+Find kicad schematic in 4040 directory. It is a hierarchical set of sheets
+corresponding to each system component.
 
-| Type      | Name   | Receiver | Transmitter | Total |
-| ---       | ---    | ---      | ---         | ---   |
-| NPN       | BC548  | 5        |             |       |
-| Amplifier | LM386  | 1        |             |       |
-| Diode     | IN4148 | 2        |             |       |
-| R         | 470k   | 1        |             |       |
-| R         | 4.7k   | 2        |             |       |
-| R         | 4.7M   | 1        |             |       |
-| R         | 4.7M   | 1        |             |       |
-
-
+![](pics/rfpreamp_detector.png)
 
 
 # Resources
